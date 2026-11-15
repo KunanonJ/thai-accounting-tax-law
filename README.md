@@ -1,63 +1,75 @@
-# Thai Accounting, Tax & Business Law — open handbook + AI skill
+# 🇹🇭 Thai Accounting, Tax & Business Law
 
-**คู่มือบัญชี ภาษี และกฎหมายธุรกิจไทย สำหรับ SMEs (ภาษาอังกฤษ พร้อมศัพท์ภาษาไทย)**
+**English** · [ภาษาไทย](README.th.md)
 
-A practical, source-cited reference for running the books of a small Thai business: company types, corporate income tax, withholding tax, VAT, accounting and audit law, filing deadlines, and the other laws that touch day-to-day operations. It is written in English, with the Thai term placed beside each concept (ภ.ง.ด.53, หจก./บจก., 50 ทวิ, …) so it maps directly onto Revenue Department forms.
+**Thai SME taxes, explained without the headache. Every number has receipts.** 🧾
 
-The same content ships as an **AI agent skill** (`skills/thai-accounting-tax-law/`), so Claude, Codex or any agent that reads `SKILL.md` files can answer Thai accounting questions with the same rules and citations.
+You run a หจก. or บจก., or you're about to. You've heard "ภ.ง.ด.53", "50 ทวิ" and "VAT 7%… for now?" and nodded along. This repo is the open, free cheat sheet we wish we'd had: what to pay, which form, by when, and *where that rule actually comes from*.
 
-> **Not legal or tax advice.** This is a working reference compiled from public sources. Rates and deadlines change. Re-check the cited source before you file, pay or sign anything, and have a licensed Thai accountant or CPA confirm it.
+It's a handbook you can read **and** an AI skill you can plug into Claude, ChatGPT or your own agent, so you get cited answers instead of confident guesses.
+
+> ⚠️ **Real talk first:** this is a reference, not legal or tax advice. Thai rules change, sometimes every year. Before you file, pay or sign anything, check the linked source and have a licensed accountant or CPA confirm it.
 >
-> **Last verified:** 15 November 2026 (B.E. 2569).
+> 🗓️ **Facts last verified:** 15 Nov 2026 (B.E. 2569) · 📦 **Version:** [v1.0.0](CHANGELOG.md)
 
 ---
 
-## At a glance (as of 15 Nov 2026)
+## ✅ Why you can trust this (and when you shouldn't)
 
-| Topic | Key number | Notes |
+We'd rather be useful than sound smart, so here's how it works:
+
+- **Receipts on every line.** Every rate, deadline and rule links to where it came from: Revenue Department, Royal Gazette, DBD, BOT, PwC, and so on. See [sources](skills/thai-accounting-tax-law/references/sources.md).
+- **We tag how sure we are.** **[V]** checked on an official source · **[S]** reputable secondary source · **[U]** not confirmed, ask an accountant.
+- **We say "UNKNOWN" out loud.** If we couldn't find a solid answer (hi, ภ.พ.36 for non-VAT companies 👋), we say so instead of making something up.
+- **We show the maths.** Worked examples, line by line, so you can check them yourself.
+- **We flag expiry dates.** VAT 7%, e-WHT 1% and online +8 days are all temporary. They're tracked in one [table](skills/thai-accounting-tax-law/references/06-filing-calendar.md#time-limited-measures-to-watch).
+- **No private data.** No real tax IDs, bank accounts or client details. Ever.
+- **Open and fixable.** MIT-licensed. Spot a mistake? Open an issue with a source and it gets fixed, with the change logged in the [changelog](CHANGELOG.md).
+
+---
+
+## ⚡ The numbers people ask about most (as of 15 Nov 2026)
+
+| What | Number | The catch |
 |---|---|---|
-| Corporate income tax (ภาษีเงินได้นิติบุคคล) | **20%** standard | [CIT](skills/thai-accounting-tax-law/references/02-corporate-income-tax.md) |
-| SME CIT rates | **0%** on the first 300,000 THB of net profit · **15%** up to 3M · **20%** above | Only if paid-up capital ≤ 5M THB **and** revenue ≤ 30M THB |
-| VAT (ภาษีมูลค่าเพิ่ม) | **7%** until **30 Sep 2027** | Royal Decree No. 807 (B.E. 2569); statutory rate is 10% |
-| VAT registration | Compulsory once turnover exceeds **1.8M THB / year** | Register within 30 days |
-| WHT on services (ค่าบริการ/ค่าจ้างทำของ) | **3%** | **1%** if paid through e-Withholding Tax, 1 Jan 2026 – 31 Dec 2027 |
-| WHT on rent / advertising / transport | **5% / 2% / 1%** | Rent and advertising also drop to 1% via e-WHT |
-| Payments abroad (ภ.ง.ด.54) | **15%** (dividends 10%) | A tax treaty may reduce it |
-| Monthly WHT filing (ภ.ง.ด.1/3/53) | **7th** of next month on paper · **15th** online | Online +8 days applies to returns due up to 31 Jan 2027 |
-| Annual CIT return (ภ.ง.ด.50) | Within **150 days** after year end | Half-year ภ.ง.ด.51 within 2 months after month 6 |
-| Social security (ประกันสังคม) | Employer **5%** + employee **5%**, wage ceiling **17,500 THB** | 2026–2028; max 875 THB/month each |
-| Keeping books and records | At least **5 years** | Accounting Act B.E. 2543 s. 14 |
+| Corporate income tax | **20%** | SMEs pay less (next row) |
+| SME CIT | **0%** on the first 300k profit · **15%** to 3M · **20%** above | Only if paid-up capital ≤ 5M **and** revenue ≤ 30M THB |
+| VAT | **7%** | Until **30 Sep 2027** (Royal Decree 807). The legal rate is 10% |
+| Register for VAT | Turnover **> 1.8M THB/year** | Within 30 days of crossing it |
+| WHT: services | **3%** | **1%** via e-Withholding Tax until 31 Dec 2027 |
+| WHT: rent / ads / transport | **5% / 2% / 1%** | Rent and ads also drop to 1% via e-WHT |
+| Paying abroad (ภ.ง.ด.54) | **15%** | A tax treaty may cut it; SaaS is a grey area [U] |
+| Monthly WHT filing | **7th** (paper) · **15th** (online) | Online +8 days covers returns due up to 31 Jan 2027 |
+| Annual CIT (ภ.ง.ด.50) | **150 days** after year end | Half-year ภ.ง.ด.51 within 2 months after month 6 |
+| Social security | **5% + 5%**, wage cap **17,500** | Max 875 THB/month each, 2026–2028 |
+| Keep your books | **5 years** | Accounting Act s. 14 |
 
 ---
 
-## Handbook (คู่มือ)
+## 📚 The handbook
 
-| # | Chapter | What it covers |
-|---|---|---|
-| 0 | [Glossary · อภิธานศัพท์](skills/thai-accounting-tax-law/references/00-glossary.md) | Thai ↔ English terms, form names, document names |
-| 1 | [Business entities](skills/thai-accounting-tax-law/references/01-business-entities.md) | Sole trader, หจก., บจก.; audit rules; converting a หจก. into a บจก. |
-| 2 | [Corporate income tax](skills/thai-accounting-tax-law/references/02-corporate-income-tax.md) | Rates, SME bands, ภ.ง.ด.50/51, penalties, worked examples |
-| 3 | [Withholding tax](skills/thai-accounting-tax-law/references/03-withholding-tax.md) | Forms, rates, e-WHT 1%, payments abroad, 50 ทวิ, worked example |
-| 4 | [VAT](skills/thai-accounting-tax-law/references/04-vat.md) | Rate, registration, tax invoices, ภ.พ.30, ภ.พ.36, non-registered businesses |
-| 5 | [Accounting, audit & DBD](skills/thai-accounting-tax-law/references/05-accounting-audit-dbd.md) | Accounting Act, TFRS for NPAEs, CPA vs TA, AGM and DBD filings |
-| 6 | [Filing calendar](skills/thai-accounting-tax-law/references/06-filing-calendar.md) | Monthly and annual deadlines in one place |
-| 7 | [Other laws](skills/thai-accounting-tax-law/references/07-other-laws.md) | PDPA, Payment Systems Act, stamp duty, social security |
-| 8 | [FlowAccount how-to](skills/thai-accounting-tax-law/references/08-flowaccount-howto.md) | Bank reconcile, WHT filing file, paying tax, period lock, AI connector |
-| — | [Sources](skills/thai-accounting-tax-law/references/sources.md) | Every source cited, with links |
+Every chapter comes in English and Thai.
 
-### Evidence tags
-
-Every rate, deadline and rule carries a tag so you know how much to trust it:
-
-- **[V]** verified on an official source (rd.go.th, ratchakitcha, bot.or.th, dbd.go.th) or an authoritative reference (e.g. PwC Tax Summaries)
-- **[S]** secondary source (accounting-software blogs, news, practitioner guides)
-- **[U]** unconfirmed or disputed; ask an accountant before relying on it
+| # | Chapter | English | ภาษาไทย |
+|---|---|---|---|
+| 🚀 | **How to use this repo** (start here) | [Guide](docs/how-to-use.md) | [คู่มือการใช้งาน](docs/how-to-use.th.md) |
+| 0 | Glossary: Thai ↔ English terms and forms | [Glossary](skills/thai-accounting-tax-law/references/00-glossary.md) | (bilingual) |
+| 1 | Business entities, CPA vs TA, หจก. → บจก. | [EN](skills/thai-accounting-tax-law/references/01-business-entities.md) | [TH](skills/thai-accounting-tax-law/references/01-business-entities.th.md) |
+| 2 | Corporate income tax | [EN](skills/thai-accounting-tax-law/references/02-corporate-income-tax.md) | [TH](skills/thai-accounting-tax-law/references/02-corporate-income-tax.th.md) |
+| 3 | Withholding tax, e-WHT, paying abroad | [EN](skills/thai-accounting-tax-law/references/03-withholding-tax.md) | [TH](skills/thai-accounting-tax-law/references/03-withholding-tax.th.md) |
+| 4 | VAT, ภ.พ.30, ภ.พ.36 | [EN](skills/thai-accounting-tax-law/references/04-vat.md) | [TH](skills/thai-accounting-tax-law/references/04-vat.th.md) |
+| 5 | Accounting law, audit, DBD filings | [EN](skills/thai-accounting-tax-law/references/05-accounting-audit-dbd.md) | [TH](skills/thai-accounting-tax-law/references/05-accounting-audit-dbd.th.md) |
+| 6 | Filing calendar | [EN](skills/thai-accounting-tax-law/references/06-filing-calendar.md) | [TH](skills/thai-accounting-tax-law/references/06-filing-calendar.th.md) |
+| 7 | PDPA, payments law, stamp duty, social security | [EN](skills/thai-accounting-tax-law/references/07-other-laws.md) | [TH](skills/thai-accounting-tax-law/references/07-other-laws.th.md) |
+| 8 | FlowAccount how-to | [EN](skills/thai-accounting-tax-law/references/08-flowaccount-howto.md) | [TH](skills/thai-accounting-tax-law/references/08-flowaccount-howto.th.md) |
+| 9 | **Real-life scenarios**: freelancer, rent, SaaS, VAT threshold, first hire, month end, year end | [EN](skills/thai-accounting-tax-law/references/09-scenarios.md) | [TH](skills/thai-accounting-tax-law/references/09-scenarios.th.md) |
+| — | Sources | [All links](skills/thai-accounting-tax-law/references/sources.md) | |
 
 ---
 
-## Use it with an AI agent
+## 🤖 Use it with AI (2-minute setup)
 
-The folder `skills/thai-accounting-tax-law/` is a self-contained agent skill: `SKILL.md` holds the working rules and the `references/` folder holds the handbook.
+The folder `skills/thai-accounting-tax-law/` is a ready-made **agent skill**. It tells the AI to cite sources, show its maths, flag what's unconfirmed and check expiry dates.
 
 **Claude Code**
 
@@ -67,24 +79,28 @@ mkdir -p ~/.claude/skills
 cp -r thai-accounting-tax-law/skills/thai-accounting-tax-law ~/.claude/skills/
 ```
 
-**Claude apps:** zip the `skills/thai-accounting-tax-law` folder and upload it as a custom skill in Claude's settings.
+**Claude apps, ChatGPT, Gemini, Codex, Cursor:** step-by-step instructions for each are in the [how-to-use guide](docs/how-to-use.md#c-plug-it-into-an-ai-assistant).
 
-**Other agents (Codex, Cursor, etc.):** point the agent at `skills/thai-accounting-tax-law/SKILL.md`, or paste it into your project's agent instructions.
+Then just ask, in Thai or English:
 
-Then ask questions such as:
+> "Paying a Thai freelancer 25,000 THB for design work. How much WHT, which form, and when?"
+>
+> "จ้างฟรีแลนซ์ 25,000 บาท ต้องหัก ณ ที่จ่ายเท่าไหร่ ยื่นแบบไหน ภายในวันไหน"
 
-- “I'm paying a Thai freelancer 25,000 THB for design work. How much WHT, which form, and when is it due?”
-- “We're a non-VAT บจก. paying for a US SaaS tool. What Thai taxes might apply?”
-- “Build our 2027 filing calendar for a company with a 31 December year end.”
+You should get the answer first, then the maths, then the tags and what to double-check. If an answer doesn't cite anything, don't trust it.
 
 ---
 
-## Contributing
+## 🛠️ Contribute
 
-Corrections and additions are welcome, especially from Thai accountants and lawyers. Please read [CONTRIBUTING.md](CONTRIBUTING.md): every change needs a source, an evidence tag, and an updated *last verified* date.
+Accountants, lawyers, bookkeepers, founders who've been through it: your corrections make this better for everyone. Read [CONTRIBUTING.md](CONTRIBUTING.md) ([ภาษาไทย](CONTRIBUTING.th.md)). The rules are short: cite a source, tag it, update the date.
 
-Wanted next: personal income tax (ภ.ง.ด.90/91/94) for freelancers, specific business tax (ภาษีธุรกิจเฉพาะ), BOI incentives, transfer pricing for SMEs, and Thai-language translations of each chapter.
+**On the wishlist:** personal income tax for freelancers (ภ.ง.ด.90/91/94), specific business tax, BOI incentives, transfer pricing for SMEs.
 
-## License
+---
 
-[MIT](LICENSE) © Kunanon Jarat. You may copy, adapt and redistribute it. Keep the notice, and remember that the content is a reference, not advice.
+## 📄 License
+
+[MIT](LICENSE) © Kunanon Jarat. Use it, fork it, ship it in your product. Just keep the notice, and remember it's a reference, not advice.
+
+If this saved you a confused afternoon, a ⭐ helps other people find it.

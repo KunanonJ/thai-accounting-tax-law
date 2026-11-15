@@ -1,5 +1,7 @@
 # 2. Corporate income tax · ภาษีเงินได้นิติบุคคล
 
+**English** · [ภาษาไทย](02-corporate-income-tax.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 Applies to Thai juristic persons: limited companies, limited partnerships and registered ordinary partnerships.

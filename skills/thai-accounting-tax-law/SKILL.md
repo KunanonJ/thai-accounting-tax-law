@@ -1,6 +1,6 @@
 ---
 name: thai-accounting-tax-law
-description: Thai SME accounting, tax and business-law reference. Use for questions or work on Thai corporate income tax, withholding tax (ภ.ง.ด.1/3/53/54, 50 ทวิ), VAT (ภ.พ.30/36), company types (หจก./บจก.), Accounting Act and audit rules, filing deadlines, PDPA, stamp duty, social security, or FlowAccount bookkeeping.
+description: Thai SME accounting, tax and business-law reference (English + Thai). Use for questions or work on Thai corporate income tax, withholding tax (ภ.ง.ด.1/3/53/54, 50 ทวิ), VAT (ภ.พ.30/36), company types (หจก./บจก.), Accounting Act and audit rules, filing deadlines, PDPA, stamp duty, social security, or FlowAccount bookkeeping.
 ---
 
 # Thai accounting, tax & business law
@@ -32,9 +32,10 @@ Reference skill for small Thai businesses (juristic partnerships and limited com
 | “When is X due?” | `references/06-filing-calendar.md` |
 | PDPA, Payment Systems Act, stamp duty, social security | `references/07-other-laws.md` |
 | Doing the work in FlowAccount | `references/08-flowaccount-howto.md` |
+| A practical situation (freelancer, rent, foreign SaaS, VAT threshold, first employee, foreign customer, month end, year end, conversion) | `references/09-scenarios.md` |
 | Links behind any tag | `references/sources.md` |
 
-Read only the chapters the question needs.
+Read only the chapters the question needs. Every chapter from 01 to 09 also has a Thai version with the same facts (`*.th.md`); when the user writes in Thai, you can read the Thai version to match its wording.
 
 ## Answer format
 

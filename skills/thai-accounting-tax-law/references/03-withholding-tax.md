@@ -1,5 +1,7 @@
 # 3. Withholding tax · ภาษีหัก ณ ที่จ่าย
 
+**English** · [ภาษาไทย](03-withholding-tax.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 The payer deducts tax from a payment, files a return, remits the tax to the RD, and gives the payee a certificate. The payee claims the withheld amount against their own income tax.

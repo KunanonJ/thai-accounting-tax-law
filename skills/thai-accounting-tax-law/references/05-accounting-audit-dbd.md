@@ -1,5 +1,7 @@
 # 5. Accounting, audit & DBD filings · การบัญชี การสอบบัญชี และการส่งงบ
 
+**English** · [ภาษาไทย](05-accounting-audit-dbd.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 ## Keeping books

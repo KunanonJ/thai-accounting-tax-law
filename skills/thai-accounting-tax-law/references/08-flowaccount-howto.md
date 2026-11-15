@@ -1,5 +1,7 @@
 # 8. FlowAccount how-to · วิธีทำงานใน FlowAccount
 
+**English** · [ภาษาไทย](08-flowaccount-howto.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] FlowAccount's own help centre · [S] secondary._
 
 FlowAccount is a widely used Thai cloud accounting package. Menu names below are as they appear in the Thai interface; the English interface uses equivalent labels.

@@ -1,5 +1,7 @@
 # 4. VAT · ภาษีมูลค่าเพิ่ม
 
+**English** · [ภาษาไทย](04-vat.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 ## Rate

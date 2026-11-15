@@ -1,5 +1,7 @@
 # 1. Business entities · รูปแบบธุรกิจ
 
+**English** · [ภาษาไทย](01-business-entities.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 ## The common forms

@@ -1,5 +1,7 @@
 # 7. Other laws that touch day-to-day operations · กฎหมายอื่นที่เกี่ยวข้อง
 
+**English** · [ภาษาไทย](07-other-laws.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 ## PDPA: Personal Data Protection Act B.E. 2562 (พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล)

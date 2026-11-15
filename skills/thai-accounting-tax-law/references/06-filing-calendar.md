@@ -1,5 +1,7 @@
 # 6. Filing calendar · ปฏิทินยื่นภาษี
 
+**English** · [ภาษาไทย](06-filing-calendar.th.md)
+
 _Last verified 15 Nov 2026. Tags: [V] official · [S] secondary · [U] unconfirmed._
 
 "Online" means RD e-Filing. The **8 extra days for online filing** apply to returns due between 1 Feb 2024 and **31 Jan 2027** [V]. If the deadline you are checking falls after that, confirm the extension was renewed. When a deadline falls on a weekend or public holiday it moves to the next business day [S PEAK].

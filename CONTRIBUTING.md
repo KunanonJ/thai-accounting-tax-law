@@ -1,5 +1,7 @@
 # Contributing · ร่วมพัฒนา
 
+**English** · [ภาษาไทย](CONTRIBUTING.th.md)
+
 Thanks for helping keep this handbook accurate. Thai tax rules change often, so corrections matter as much as new chapters.
 
 ## Rules for every change
@@ -12,7 +14,8 @@ Thanks for helping keep this handbook accurate. Thai tax rules change often, so 
 3. **Write UNKNOWN rather than guess.** An honest gap is more useful than a confident error.
 4. **Mark time limits.** If a measure has an end date (VAT 7%, e-WHT 1%, online +8 days), state it and add it to the "time-limited measures" table in `06-filing-calendar.md`.
 5. **Update the date.** Change *Last verified* at the top of each file you touch, and in `README.md` and `SKILL.md` if you changed a headline number.
-6. **No private data.** Never include real tax IDs, bank account numbers, client names or internal company documents.
+6. **Change both languages.** If you change a fact in an English file, change its `.th.md` twin too, or say in the pull request that a translation is needed.
+7. **No private data.** Never include real tax IDs, bank account numbers, client names or internal company documents.
 
 ## Style
 
@@ -21,10 +24,10 @@ Thanks for helping keep this handbook accurate. Thai tax rules change often, so 
 - Show worked examples with the arithmetic laid out line by line.
 - Give dates in C.E., adding B.E. where it helps (2027 = 2570).
 
-## Thai translations
+## Thai versions
 
-Full Thai versions of each chapter are welcome. Put them beside the English file with a `.th.md` suffix, e.g. `03-withholding-tax.th.md`.
+Every chapter has a Thai twin beside it with a `.th.md` suffix, e.g. `03-withholding-tax.th.md`. Thai files use plain, readable Thai and B.E. dates; keep the facts and numbers identical to the English file.
 
 ## How to submit
 
-Open an issue for a question or a suspected error, or a pull request with the fix and its source.
+Open an issue for a question or a suspected error, or a pull request with the fix and its source. Merged changes are recorded in [CHANGELOG.md](CHANGELOG.md).
